@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me quieres?</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function respuestaSi() {
+            document.getElementById("respuesta").innerHTML = "¡Yo también te quiero! ❤️";
+            document.getElementById("respuesta").style.color = "#FF69B4"; /* Rosa brillante */
+        }
+
+        function respuestaNo() {
+            document.getElementById("respuesta").innerHTML = "😢";
+            document.getElementById("respuesta").style.color = "#FF6347"; /* Rojo triste */
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Me quieres?</h1>
+        <div class="buttons">
+            <button onclick="respuestaSi()">Sí</button>
+            <button onclick="respuestaNo()">No</button>
+        </div>
+        <p id="respuesta"></p>
+    </div>
+</body>
+</html>
